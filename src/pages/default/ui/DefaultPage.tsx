@@ -1,4 +1,4 @@
-import { Button } from "@shared/ui"
+import { Button, Text, Title } from "@shared/ui"
 
 export const DefaultPage = () => {
     return (
@@ -7,20 +7,16 @@ export const DefaultPage = () => {
                 <img src="/home-hero.jpg" alt="" />
             </div>
             <div className={"relative -top-16 flex flex-col items-center justify-center"}>
-                <h1 className={"text-[58px] leading-[150%] font-bold text-white"}>
+                <Title as={"h1"} size={"xl"}>
                     The Best Streaming Experience
-                </h1>
-                <p
-                    className={
-                        "text-grey-60 mt-3.5 mb-12.5 max-w-[1096px] text-center text-lg leading-[150%] font-normal"
-                    }
-                >
+                </Title>
+                <Text className={"mt-3.5 mb-12.5 max-w-[1096px] text-center"}>
                     StreamVibe is the best streaming experience for watching your favorite movies
                     and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide
                     variety of content, including the latest blockbusters, classic movies, popular
                     TV shows, and more. You can also create your own watchlists, so you can easily
                     find the content you want to watch.
-                </p>
+                </Text>
                 <Button>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
