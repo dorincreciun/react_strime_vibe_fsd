@@ -1,3 +1,5 @@
-export { Portal } from "./Portal"
-export { Overlay } from "./Overlay"
-export { Tabs } from "./tabs"
+export { Portal } from "./portal"
+export { Overlay } from "./overlay"
+export { Container } from "./container"
+export { Logo } from "./logo"
+export { Button } from "./button"
