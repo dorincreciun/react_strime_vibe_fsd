@@ -1,4 +1,4 @@
-import { NavLink } from "react-router"
+import { NavLink, useMatch } from "react-router"
 
 import { HeaderMenu } from "@features/header-menu"
 import { NotificationButton } from "@features/notifications"
@@ -9,10 +9,15 @@ import { Container, Logo } from "@shared/ui"
 import { cn } from "@shared/utils/cn"
 
 export const Header = () => {
+    const isHomePage = useMatch(ROUTES.DEFAULT)
+
     return (
         <header
             className={cn([
-                "absolute top-0 left-0 z-10 w-full",
+                "left-0 z-10 w-full",
+
+                isHomePage ? "absolute top-0" : "relative",
+
                 "max-xl:py-6 max-md:pt-10 max-md:pb-3.5 xl:py-7.5",
             ])}
         >

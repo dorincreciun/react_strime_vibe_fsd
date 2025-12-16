@@ -51,7 +51,7 @@ export const HeaderMenu = () => {
                 Support
             </HeaderMenuItem>
 
-            <HeaderMenuItem linkRef={register} to="/subscriptions">
+            <HeaderMenuItem linkRef={register} to={ROUTES.SUBSCRIPTIONS}>
                 Subscriptions
             </HeaderMenuItem>
         </nav>

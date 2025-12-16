@@ -2,6 +2,7 @@ import { type IndexRouteObject, type NonIndexRouteObject, useRoutes } from "reac
 
 import { DefaultPage } from "@pages/default"
 import { FallBackPage } from "@pages/fallback"
+import { SubscriptionPage } from "@pages/subscription"
 
 import { type AppRoute, ROUTES } from "@shared/const/routes"
 
@@ -20,9 +21,10 @@ export type AppRouteObject = AppNonIndexRouteObject | AppIndexRouteObject
 const PublicRoutes: AppRouteObject[] = [
     { path: ROUTES.FALLBACK, element: <FallBackPage /> },
     { path: ROUTES.DEFAULT, element: <DefaultPage /> },
+    { path: ROUTES.SUBSCRIPTIONS, element: <SubscriptionPage /> },
 ]
 
-const PrivateRoutes: AppRouteObject[] = [{ path: ROUTES.CABINET, element: <div>Cabinet</div> }]
+const PrivateRoutes: AppRouteObject[] = []
 
 export const Routing = () => {
     return useRoutes([...PublicRoutes, ...PrivateRoutes])
