@@ -13,19 +13,23 @@ export const SubscriptionPlans = () => {
                     suit your viewing preferences. Get ready for non-stop entertainment!
                 </Text>
             </div>
-            <div className={"grid grid-cols-3 gap-5"}>
+            <div className={"grid grid-cols-3 max-xl:gap-5 xl:gap-[30px]"}>
                 {Array.from({ length: 3 }).map(() => (
                     <div
                         className={cn([
                             "border-black-15 bg-black-10 border",
-                            "flex flex-col gap-10",
+                            "flex flex-col max-xl:gap-10 max-md:gap-[30px] xl:gap-[50px]",
 
                             "max-xl:rounded-[10px] xl:rounded-xl",
                             "max-xl:p-10 max-md:p-6 xl:p-[50px]",
                         ])}
                     >
                         <div className={"flex flex-col max-xl:gap-3 max-md:gap-2.5 xl:gap-4"}>
-                            <h3 className={"text-[20px] leading-[150%] font-bold text-white"}>
+                            <h3
+                                className={
+                                    "leading-[150%] font-bold tracking-[0%] text-white max-xl:text-xl max-md:text-lg xl:text-2xl"
+                                }
+                            >
                                 Basic Plan
                             </h3>
                             <Text>
@@ -34,7 +38,11 @@ export const SubscriptionPlans = () => {
                             </Text>
                         </div>
                         <div>
-                            <span className={"text-3xl leading-[73%] font-semibold text-white"}>
+                            <span
+                                className={
+                                    "leading-[73%] font-semibold text-white max-xl:text-3xl max-md:text-2xl xl:text-[40px]"
+                                }
+                            >
                                 $9.99
                             </span>
                             <span className={"text-grey-60 text-base leading-[73%] font-medium"}>

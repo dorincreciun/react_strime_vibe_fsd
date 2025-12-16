@@ -9,7 +9,7 @@ export const SearchButton = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6"
+                className="max-xl:size-6 xl:size-[34px]"
             >
                 <path
                     strokeLinecap="round"

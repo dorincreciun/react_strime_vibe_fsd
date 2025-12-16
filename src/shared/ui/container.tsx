@@ -6,7 +6,7 @@ export const Container = ({ children, className, ...rest }: HTMLAttributes<HTMLD
     return (
         <div
             className={cn(
-                "mx-auto w-full max-w-[1657px] max-xl:px-8 max-md:px-4 xl:px-12",
+                "mx-auto w-full max-w-[1700px] max-xl:px-8 max-md:px-4 xl:px-12",
                 className,
             )}
             {...rest}
