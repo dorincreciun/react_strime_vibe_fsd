@@ -1,15 +1,19 @@
+import type { Ref } from "react"
+
 import { NavLink, type NavLinkProps } from "react-router"
 
 import { cn } from "@shared/utils/cn"
 
 interface HeaderMenuItemProps extends NavLinkProps {
     children: string
+    linkRef?: Ref<HTMLAnchorElement>
 }
 
-export const HeaderMenuItem = ({ children, className, ...rest }: HeaderMenuItemProps) => {
+export const HeaderMenuItem = ({ children, className, linkRef, ...rest }: HeaderMenuItemProps) => {
     return (
         <NavLink
             {...rest}
+            ref={linkRef}
             className={({ isActive }) =>
                 cn(
                     // Base
