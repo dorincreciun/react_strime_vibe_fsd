@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router"
 import { Routing } from "@app/router"
 
 import "./styles/index.css"
+import { Footer } from "@widgets/app-footer"
 import { Header } from "@widgets/app-header"
 
 const container = document.getElementById("root")
@@ -19,6 +20,7 @@ root.render(
         <div className="mx-auto w-full max-w-[1920px]">
             <Header />
             <Routing />
+            <Footer />
         </div>
     </BrowserRouter>,
 )
