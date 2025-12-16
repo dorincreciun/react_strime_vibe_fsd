@@ -14,8 +14,8 @@ export const CategoryCard = ({ category, className }: CategoryCardProps) => {
         <div
             className={cn([
                 "group relative flex flex-col items-center",
-                "p-5 xl:p-6 2xl:p-7.5",
-                "border-black-15 bg-black-10 rounded-xl border",
+                "max-xl:p-6 max-md:p-5 xl:p-7.5",
+                "border-black-15 bg-black-10 border max-xl:rounded-[10px] xl:rounded-xl",
 
                 "transition-all duration-200 ease-out",
                 "hover:border-black-25 hover:bg-black-12 hover:-translate-y-0.5",
@@ -29,7 +29,7 @@ export const CategoryCard = ({ category, className }: CategoryCardProps) => {
                 to={category.slug}
                 aria-label={category.name}
                 className={cn([
-                    "absolute inset-0 z-10 rounded-xl",
+                    "absolute inset-0 z-10 max-xl:rounded-[10px] xl:rounded-xl",
 
                     "focus-visible:outline-none",
                     "focus-visible:ring-red-55/40 focus-visible:ring-2",
@@ -49,7 +49,7 @@ export const CategoryCard = ({ category, className }: CategoryCardProps) => {
             />
 
             <div className="pointer-events-none mt-3 flex w-full items-center justify-between gap-4">
-                <h2 className="xl:text-md text-sm leading-[150%] font-semibold text-white 2xl:text-lg">
+                <h2 className="max-xl:text-md leading-[150%] font-semibold text-white max-md:text-sm xl:text-lg">
                     {category.name}
                 </h2>
 

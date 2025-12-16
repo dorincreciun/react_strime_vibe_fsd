@@ -1,7 +1,9 @@
 export const Logo = () => {
     return (
         <svg
-            className={"h-8.75 w-[7.255rem] xl:h-12.5 xl:w-[10.3644rem] 2xl:h-15 2xl:w-49.75"}
+            className={
+                "max-xl:h-12.5 max-xl:w-[10.3644rem] max-md:h-8.75 max-md:w-[7.255rem] xl:h-15 xl:w-49.75"
+            }
             width="199"
             height="60"
             viewBox="0 0 199 60"

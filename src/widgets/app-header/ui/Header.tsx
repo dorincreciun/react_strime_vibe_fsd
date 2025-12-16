@@ -11,7 +11,10 @@ import { cn } from "@shared/utils/cn"
 export const Header = () => {
     return (
         <header
-            className={cn(["absolute top-0 left-0 z-10 w-full", "pt-10 pb-3.5 xl:py-6 2xl:py-7.5"])}
+            className={cn([
+                "absolute top-0 left-0 z-10 w-full",
+                "max-xl:py-6 max-md:pt-10 max-md:pb-3.5 xl:py-7.5",
+            ])}
         >
             <Container className="relative flex items-center">
                 {/* Left */}

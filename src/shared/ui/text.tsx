@@ -8,7 +8,13 @@ interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
 
 export const Text = ({ children, className, ...rest }: TextProps) => {
     return (
-        <p className={cn("text-grey-60 text-lg leading-[150%] font-normal", className)} {...rest}>
+        <p
+            className={cn(
+                "text-grey-60 leading-[150%] font-normal max-xl:text-base max-md:text-sm xl:text-lg",
+                className,
+            )}
+            {...rest}
+        >
             {children}
         </p>
     )

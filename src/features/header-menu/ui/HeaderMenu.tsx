@@ -15,15 +15,28 @@ export const HeaderMenu = () => {
             aria-label="Main navigation"
             onKeyDown={onKeyDown}
             className={cn([
-                "xl:bg-black-06 xl:max-w-max xl:rounded-lg xl:p-2",
-                "xl:flex xl:items-center xl:justify-center xl:gap-2",
-                "xl:absolute xl:top-1/2 xl:left-1/2",
-                "xl:-translate-x-1/2 xl:-translate-y-1/2",
-                "xl:focus-within:outline-none",
-                "xl:focus-within:ring-black-12 xl:focus-within:ring-2",
-                "xl:focus-within:ring-offset-black-06 xl:focus-within:ring-offset-2",
-                "xl:transition-shadow xl:duration-150 xl:ease-out",
-                "xl:motion-reduce:transition-none",
+                // layout (base)
+                "flex items-center justify-center",
+                "bg-black-06",
+
+                // size + spacing + shape (responsive)
+                "max-xl:h-[61px] max-xl:gap-2 max-xl:rounded-[10px] max-xl:px-2",
+                "xl:h-[75px] xl:gap-2.5 xl:rounded-xl xl:px-2.5",
+
+                // positioning
+                "absolute top-1/2 left-1/2",
+
+                // transform
+                "-translate-x-1/2 -translate-y-1/2",
+
+                // focus / accessibility
+                "focus-within:outline-none",
+                "focus-within:ring-black-12 focus-within:ring-2",
+                "focus-within:ring-offset-black-06 focus-within:ring-offset-2",
+
+                // motion / transition
+                "transition-shadow duration-150 ease-out",
+                "motion-reduce:transition-none",
             ])}
         >
             <HeaderMenuItem linkRef={register} to={ROUTES.DEFAULT}>
