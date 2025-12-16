@@ -1,5 +1,5 @@
 import { ROUTES } from "@shared/const/routes"
-import { useRovingFocus } from "@shared/lib/keyboard/use-roving-focus"
+import { useRovingFocus } from "@shared/lib/keyboard"
 import { cn } from "@shared/utils/cn"
 
 import { HeaderMenuItem } from "./HeaderMenuItem"
