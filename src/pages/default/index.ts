@@ -1,1 +1,1 @@
-export { DefaultPage } from "./ui/DefaultPage"
+export { DefaultPage } from "./ui/default-page"

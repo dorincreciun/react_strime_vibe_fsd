@@ -17,11 +17,6 @@ export const buttonCva = cva(
         // Interaction
         "cursor-pointer",
 
-        // Focus ring (dark UI, no white halo)
-        "outline-none",
-        "focus-visible:ring-2 focus-visible:ring-red-55/40",
-        "focus-visible:ring-offset-2 focus-visible:ring-offset-black-08",
-
         // Optional: a subtle inner ring for crisp edges
         "focus-visible:shadow-[0_0_0_1px_rgba(255,25,25,0.25)]",
 

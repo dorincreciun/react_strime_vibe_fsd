@@ -40,6 +40,16 @@
     --color-grey-99: #fcfcfd;
 }
 
+@layer base {
+    :where(a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])):focus-visible {
+        outline: none;
+
+        /* Tailwind ring utilities */
+        @apply ring-2 ring-red-55/40;
+        @apply ring-offset-2 ring-offset-black-08;
+    }
+}
+
 body,
 #root {
     @apply
@@ -47,3 +57,5 @@ body,
     font-primary
     bg-black-08
 }
+
+/** { outline: 1px solid green; }*/

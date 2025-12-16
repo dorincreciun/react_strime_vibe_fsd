@@ -16,7 +16,7 @@ const root = createRoot(container)
 
 root.render(
     <BrowserRouter>
-        <div className={"mx-auto max-w-[1920px]"}>
+        <div className="mx-auto w-full max-w-[1920px]">
             <Header />
             <Routing />
         </div>
