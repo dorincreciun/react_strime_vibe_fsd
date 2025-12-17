@@ -1,6 +1,6 @@
 import { Button, Container, Text, Title } from "@shared/ui"
 
-export const FooterBanner = () => {
+export const FooterCtaBanner = () => {
     return (
         <Container className="max-xl:my-[120px] max-md:my-20 xl:my-[150px]">
             <div className="border-black-15 relative flex min-h-80 items-center overflow-hidden rounded-xl border">
